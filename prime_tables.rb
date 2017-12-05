@@ -2,6 +2,12 @@ require './lib/prime'
 require './lib/table'
 
 
-puts 'How many primes would you like?'
-number = gets.chomp.to_i
+if ARGV.first == nil
+  number = 10
+else
+  number = ARGV.first.to_i
+end
+
+puts ''
+puts "Multiplication table of first #{number} prime numbers"
 puts Table.build(Prime.list(number))
