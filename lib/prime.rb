@@ -14,4 +14,14 @@ class Prime
     true
   end
 
+  def self.list(number = 10)
+    result = []
+    i = 2
+    until result.count == number
+      result << i if Prime.valid(i)
+      i += 1
+    end
+    result
+  end
+
 end

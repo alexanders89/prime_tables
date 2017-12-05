@@ -23,6 +23,20 @@ describe Prime do
       expect(Prime.valid(2203)).to eq true
       expect(Prime.valid(6660000000001)).to eq true
     end
+  end
 
+  describe 'list' do
+    it 'will generate the first 10 primes' do
+      expect(Prime.list).to eq [2, 3, 5, 7, 11, 13, 17, 19, 23, 29]
+    end
+
+    it 'will generate a user specified number of primes' do
+      expect(Prime.list(5)).to eq [2, 3, 5, 7, 11]
+      expect(Prime.list(20)).to eq [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71]
+    end
+
+    it 'can generate large numbers of primes' do
+      expect((Prime.list(20000)).count).to eq 20000
+    end
   end
 end
