@@ -13,8 +13,9 @@ Assumes Ruby (https://www.ruby-lang.org/en/downloads/) and Bundler are already i
 
 Start by opening Terminal of your preferred command line interface
 
-Fork this repo and clone on to your local machine
+Clone on to your local machine
 
-'''bash
-git clone
-'''
+```sh
+$ git clone git@github.com:alexanders89/prime_tables.git
+$ cd prime_tables
+```
