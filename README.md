@@ -34,7 +34,7 @@ $ bundle
 
 ## How to Run
 
-Change into the prime_tables if you aren't already
+Change into the prime_tables directory
 
 The standard output will be a table of the first 10 prime numbers and is achieved by running the prime_tables file.
 
@@ -79,7 +79,7 @@ The program is capable of generating large numbers of primes, however anything o
 
 ## Running the tests
 
-Change into the directory and run Rspec
+In the directory run Rspec
 
 ```sh
 $ rspec
@@ -127,8 +127,4 @@ This also affected my test coverage, normally I would aim for 98% plus coverage 
 
 ## Tech Used
 
-Ruby
-Rspec
-Terminal Table (https://github.com/tj/terminal-table)
-Bundler
-Simplecov (https://github.com/colszowka/simplecov)
+Ruby, Rspec, Terminal Table (https://github.com/tj/terminal-table), Bundler, Simplecov (https://github.com/colszowka/simplecov)
