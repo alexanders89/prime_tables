@@ -14,5 +14,15 @@ describe Prime do
       expect(Prime.valid(324)).to eq false
       expect(Prime.valid(5555)).to eq false
     end
+
+    it 'will return true when given a prime number' do
+      expect(Prime.valid(5)).to eq true
+      expect(Prime.valid(372511)).to eq true
+      expect(Prime.valid(267341)).to eq true
+      expect(Prime.valid(547)).to eq true
+      expect(Prime.valid(2203)).to eq true
+      expect(Prime.valid(6660000000001)).to eq true
+    end
+
   end
 end
