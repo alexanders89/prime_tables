@@ -35,10 +35,10 @@ describe Prime do
       expect(Prime.list(20)).to eq [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71]
     end
 
-    #Test removed whilst building table class
-
-    # it 'can generate large numbers of primes' do
-    #   expect((Prime.list(20000)).count).to eq 20000
-    # end
+    #Test can be removed to quicken up the tests
+    
+    it 'can generate large numbers of primes' do
+      expect((Prime.list(20000)).count).to eq 20000
+    end
   end
 end
