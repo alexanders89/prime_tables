@@ -2,7 +2,7 @@ require 'terminal-table'
 
 class Table
 
-  def self.make_array(array = [1,2,3])
+  def self.make_array(array)
     return 'Only integers can be multiplied' if !array.all? {|i| i.is_a?(Integer)}
     rows = [[''] + array]
     array.each_with_index do |digit, index|
@@ -13,10 +13,9 @@ class Table
     rows
   end
 
-  def self.build(array = [1,2,3])
+  def self.build(array)
     multiplied = self.make_array(array)
     table = Terminal::Table.new :rows => multiplied
-    table
   end
 
 end

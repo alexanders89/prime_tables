@@ -14,7 +14,7 @@ class Prime
     true
   end
 
-  def self.list(number = 10)
+  def self.list(number)
     result = []
     i = 2
     until result.count == number

@@ -27,7 +27,7 @@ describe Prime do
 
   describe 'list' do
     it 'will generate the first 10 primes' do
-      expect(Prime.list).to eq [2, 3, 5, 7, 11, 13, 17, 19, 23, 29]
+      expect(Prime.list(10)).to eq [2, 3, 5, 7, 11, 13, 17, 19, 23, 29]
     end
 
     it 'will generate a user specified number of primes' do

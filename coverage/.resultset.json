@@ -91,7 +91,6 @@
         1,
         1,
         null,
-        null,
         null
       ],
       "/Users/alexsatur/Desktop/prime_tables/lib/table.rb": [
@@ -112,11 +111,12 @@
         null,
         1,
         0,
+        0,
         null,
         null,
         null
       ]
     },
-    "timestamp": 1512479590
+    "timestamp": 1512482798
   }
 }
