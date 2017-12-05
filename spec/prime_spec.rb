@@ -9,8 +9,10 @@ describe Prime do
       expect(Prime.valid(-12)).to eq 'Must be greater than 1'
     end
 
-    # it 'will return true given a prime number' do
-    #   expect(Prime.valid(5)).to eq true
-    # end
+    it 'will return false when given a non prime number' do
+      expect(Prime.valid(10)).to eq false
+      expect(Prime.valid(324)).to eq false
+      expect(Prime.valid(5555)).to eq false
+    end
   end
 end
