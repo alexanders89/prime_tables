@@ -16,5 +16,5 @@ Start by opening Terminal of your preferred command line interface
 Fork this repo and clone on to your local machine
 
 '''bash
-git clone
+$ git clone
 '''
