@@ -16,7 +16,7 @@ class Table
   def self.build(array = [1,2,3])
     multiplied = self.make_array(array)
     table = Terminal::Table.new :rows => multiplied
-    puts table
+    table
   end
 
 end
